@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/food.css">
+    <script src="index.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Food Wagon</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img class="burger-icon" src="images/icons/burger_icon.png">
+            <div class="name-food">food</div>
+            <div class="name-wagon">waGon</div>
+        </div>
+
+        <div class="header-center">
+            <div class="bold-text"> Deliver to</div>
+            <img src="images/icons/location-icon.png">
+            <div class="header-center-text">Current Location</div>
+            <div class="bold-text">Mohammadpur Bus Stand, Dhaka</div>
+
+        </div>
+
+        <div class="header-right">
+            <img class="search-icon" src="images/icons/search-12-24.png">
+            <div class="bold-text">Search Food</div> 
+            <button class="login-btn">
+                <img class="login-icon" src="images/icons/people.png">
+                Login
+            </button>
+        </div>
+    </header>
+
+    <section class="delivery-pickup">
+        <div class="delivery-pickup-right">
+            <p class="big-white-text">
+                Are you starving?
+            </p>
+            <p class="description">
+                Within a few clicks, find meals that are accessible near you
+            </p>
+            <div class="find-food-container">
+                <div class="delivery-pickup-area">
+                    <button class="delivery-btn">
+                        <img class="delivery-icon" src="images/icons/motorcycle-24.png">
+                        Delivery
+                    </button>
+                    
+                    <button class="pickup-btn">
+                        <img class="pickup-icon" src="images/icons/shopping-bag-24.png">
+                        Pickup
+                    </button>
+                </div>
+                    
+                <div class="address-search">
+                    <div class="input-with-icon">
+                        <img src="images/icons/location.png">
+                        <input type="text" placeholder="Enter Your Address">
+                    </div>
+                    <button class="address-search-btn">
+                        <img class="address-search-icon" src="images/icons/search-13-24.png">
+                            Find Food
+                    </button>
+                    
+                </div> 
+            </div>
+        </div>  
+        <div class="delivery-pickup-left">
+            <img src="images/background/delivery-pickup.png">
+        </div>
+    </section>
+
+    <!-- First link - Food Display -->
+    <section class="grid-wrapper">
+        <div class="food-grid">
+
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/background/pasta1.jpg">
+                <div class="sale-column">
+                    <div class="sale">15</div>
+                    <div class="percent-off">
+                        <p class="percent-symbol">%</p>
+                        <p>Off</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/background/pasta2.jpg">
+                <div class="sale-column">
+                    <div class="sale">10</div>
+                    <div class="percent-off">
+                        <p class="percent-symbol">%</p>
+                        <p>Off</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/background/pasta3.jpg">
+                <div class="sale-column">
+                    <div class="sale">25</div>
+                    <div class="percent-off">
+                        <p class="percent-symbol">%</p>
+                        <p>Off</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/background/pasta4.jpg">
+                <div class="sale-column">
+                    <div class="sale">20</div>
+                    <div class="percent-off">
+                        <p class="percent-symbol">%</p>
+                        <p>Off</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p class="food-name">Greys Vage</p>
+                <p class="remaining-days">6 Days Remaining</p> 
+            </div>
+            <div>
+                <p class="food-name">Greys Vage</p>
+                <p class="remaining-days">9 Days Remaining</p> 
+            </div>
+            <div>
+                <p class="food-name">Greys Vage</p>
+                <p class="remaining-days">10 Days Remaining</p> 
+            </div>
+            <div>
+                <p class="food-name">Greys Vage</p>
+                <p class="remaining-days">7 Days Remaining</p> 
+            </div>
+        </div>
+    </section>
+    
+    <section class="instruction-wrapper">
+        <div class="order-instruction">
+            <p class="instruction-question">How does it work</p>
+            <div class="instruction-row">
+                <img src="images/icons/location-icon.png">
+                <img src="images/icons/hotel-bell.png">
+                <img src="images/icons/print.png">
+                <img src="images/icons/sweet.png">
+
+                <p class="instruction-title">Select location</p>
+                <p class="instruction-title">Choose order</p>
+                <p class="instruction-title">Pay advanced</p>
+                <p class="instruction-title">Enjoy meals</p>
+
+                <p class="instruction-summary">
+                    Choose the location where your food will be delivered
+                </p>
+                <p class="instruction-summary">
+                    Click over hundred of menus to pick your favorite food
+                </p>
+                <p class="instruction-summary">
+                    It's quick, safe, and simple. Select several methods of payment
+                </p>
+                <p class="instruction-summary">
+                    Food is made and delivered quickly to your home.
+                </p> 
+            </div>
+        </div>
+    </section>
+    
+    <section class="popular-grid-wrapper">
+        <div class="popular-food-grid">
+            <p class="instruction-question">
+                Popular items
+            </p>
+            <div class="popular-thumbnail-row">
+                <img class="thumbnail" src="images/background/pasta1.jpg">
+                <div class="sale-column">
+                    <div class="sale">15</div>
+                    <div class="percent-off">
+                        <p class="percent-symbol">%</p>
+                        <p>Off</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div style="margin-bottom: 300px;"></div>
+    
+</body>
+</html>

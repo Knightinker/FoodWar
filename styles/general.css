@@ -1,0 +1,237 @@
+body{
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+.delivery-pickup{
+  height: 400px;
+  background-image: linear-gradient(to bottom, #f6cf5c, #f0c74d, #e9bf3d, #e3b72b, #dcaf12);
+}
+
+
+.delivery-pickup-right{
+  flex-direction: column;
+  flex: 1;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+.big-white-text{
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.description{
+  margin-top: 30px;
+  color: rgb(91, 88, 88);
+}
+
+.delivery-pickup-left{
+  width: 600px;
+  position: relative;
+  height: 400px; /* Or whatever height fits your image */
+  overflow: hidden;
+}
+
+.delivery-pickup-left img{
+  position: absolute;
+  bottom: -45px;
+  right: 120px;
+}
+
+.find-food-container{
+  position: relative;
+  margin-top: 30px;
+  padding: 15px;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.address-search{
+  margin-top: 30px;
+}
+
+.delivery-pickup-area{
+  margin:0;
+  position: relative;
+  width: 300px;
+  margin-bottom: 30px;
+}
+.delivery-btn,
+.pickup-btn{
+  position: absolute;
+  align-items: center;
+  border-radius: 5px;
+  color:gray;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+  margin-right: 50px;
+  background-color: white;
+  cursor: pointer;
+  
+}
+
+.delivery-btn{
+  padding: 2px 13px 2px 13px;
+  top:0;
+  left: 0;
+}
+
+.pickup-btn{
+  padding: 5px 13px 5px 13px;
+  top:0;
+  left:100px;
+  
+}
+
+.delivery-icon{
+  filter: grayscale(100%);
+  height: 20px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+.pickup-icon{
+  filter: grayscale(100%);
+  height: 14px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+.delivery-btn.selected,
+.pickup-btn.selected{
+  color: rgb(198, 102, 1);
+  background-color: rgba(198, 103, 1, 0.1);
+}
+
+.delivery-btn.selected .delivery-icon,
+.pickup-btn.selected .pickup-icon{
+  filter:none;
+}
+
+.find-food-container,
+.button-tab,
+.delivery-pickup-right,
+.delivery-pickup,
+.delivery-btn,
+.pickup-btn,
+.address-search{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Address Search Bar */
+
+.input-with-icon{
+  position: relative;
+  display: inline-block;
+}
+.input-with-icon img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 15px;
+  pointer-events: none; 
+}
+
+.input-with-icon input {
+  padding-left: 35px;
+  height: 30px; 
+  width: 350px;;
+  font-size: 12px;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Address Search Button */
+.address-search-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(198, 102, 1);
+  font-weight: bold;
+  border: none;
+  margin-left: 10px;
+  white-space: nowrap;
+  font-size: 10px;
+  padding: 5px 15px;
+}
+
+.address-search-icon{
+  height: 13px;
+  margin-right: 5px;
+}
+
+/* How to order */
+
+.instruction-wrapper {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #fef0ca, #ffeedd, #fff1f3, #fff9ff, #ffffff);
+  margin-top:30px;
+  padding: 20px;
+  justify-content: center;
+}
+.order-instruction{
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  gap: 15px;
+  margin-top: 30px;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.instruction-question{
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(198, 102, 1);
+
+}
+
+.instruction-row{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 50px;
+  place-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+.instruction-row img{
+  height: 50px;
+  margin-top: 30px;
+}
+
+.instruction-title {
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.instruction-summary{
+  margin-top: 10px;
+  font-size: 12px;
+  color: gray;
+  
+}
+

@@ -1,5 +1,7 @@
 footer{
   background-image: linear-gradient(to bottom, #cfa103, #bb9206, #a88307, #957508, #836709);
+  position: relative;
+  overflow: hidden;
 }
 
 .footer-column{
@@ -35,4 +37,18 @@ footer{
   font-size: 15px;
   text-align: center;
   place-content: center;
+}
+
+.footer-right-img{
+  position:absolute;
+  top: 0;
+  right: 0;
+  height: 500px;
+}
+
+.footer-left-img{
+  position:absolute;
+  top: 0px;
+  left:-50px;
+  height:300px;
 }

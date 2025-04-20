@@ -1,4 +1,6 @@
-.grid-wrapper {
+.grid-wrapper,
+.populars-grid-wrapper,
+.featured-grid-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -105,33 +107,136 @@
 }
 
 /* Popular */
-.popular-grid-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.popular-food-grid{
+.populars-grid-row,
+.featured-grid-row{
   display: grid;
-  grid-template-rows: 50px 1fr;
-  gap: 15px;
-  justify-items: center;
+  grid-template-rows: 30px 1fr;
   margin-top: 30px;
 }
-.popular-grid-wrapper p{
-  color: black;
-}
 
-.popular-thumbnail-row{
-  position: relative;
+.populars-header,
+.featured-header{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+.populars-grid-column{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
+  margin:  30px 120px;
+  column-gap: 20px;
 }
 
-.thumbnail{
+.populars-thumbnail,
+.featured-thumbnail{
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1 / 1; 
   object-fit: cover;
+  border-radius: 10px;
+}
+
+.populars-name,
+.featured-restaurant-name{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.populars-location-col{
+  display: grid;
+  grid-template-columns: 15px 1fr;
+  margin-top: 5px;
+}
+
+.populars-location-col img{
+  width: 13px;
+  height: 13px;
+}
+
+.populars-location-col p,
+.featured-rating-column p{
+  color: orange;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.populars-price{
+  font-weight:bold;
+  font-size: 9px;
+  margin-top: 5px;
+}
+
+.populars-grid-wrapper button{
+  margin-top: 10px;
+  width: 100%;
+  background-color: rgb(198, 102, 1);
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 10px 22px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+/* FEATURES */
+.featured-grid-column{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin:  30px 200px;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-items: left;
+}
+
+.featured-restaurant-column{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.featured-restaurant-row{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: left;
+  row-gap: 3px;
   
 }
+
+.featured-logo{
+  width: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.featured-rating-column{
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+}
+
+.featured-rating-column img{
+  width: 15px;
+}
+
+.featured-rating-column p{
+  font-size: 11px;
+}
+
+.featured-opening,
+.featured-opening-open{
+    font-weight: bold;
+    color: rgb(205, 83, 2);
+    background-color: rgba(241, 144, 33, 0.283);
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px 8px;
+    width: min-content;
+    white-space: nowrap;
+}
+
+.featured-opening-open{
+  color: rgb(2, 140, 2);
+  background-color: rgba(99, 241, 77, 0.46);
+}
+

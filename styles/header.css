@@ -24,10 +24,47 @@ body{
     margin-left: 100px;
 }
 
+@media (max-width: 750px) {
+    .header-left{
+        width:100px;
+    }
+
+    .burger-icon{
+        height: 15px;
+        margin-left: 20px;
+    }
+
+    .name-food, .name-wagon{
+        font-size: 8px;
+    }
+
+    .header-center{
+        opacity: 0;
+    }
+
+    .header-right{
+        width: 100px;
+        margin-left: -150px;
+    }
+    .header-right .search-icon{
+        height: 12px
+    }
+
+    .header-right .login-btn{
+        margin-left: 15px;
+        margin-right: 50px;
+        padding: 5px 7px;
+    }
+
+}
 .name-food{
     color: rgb(198, 102, 1);
     margin-left:10px;
     font-family: roboto, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.name-wagon{
     font-size: 15px;
     font-weight: bold;
 }

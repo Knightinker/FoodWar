@@ -13,6 +13,37 @@ p{
 }
 
 
+@media (max-width: 750px) {
+
+  .delivery-pickup{
+    height: 300px;
+    align-items: start;
+  }
+
+  .delivery-pickup .delivery-pickup-right{
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .delivery-pickup-right .big-white-text{
+    font-size: 30px
+  }
+
+  .delivery-pickup-right .description{
+    margin-top: 10px;
+  }
+
+  .find-food-container{
+    margin-top: 15px;
+    padding: 15px;
+  }
+
+  .address-search .input-with-icon input {
+    height: 30px; 
+    width: 280px;
+  }
+
+}
+
 .delivery-pickup-right{
   flex-direction: column;
   flex: 1;

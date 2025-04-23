@@ -12,6 +12,17 @@
   margin-top: 30px;
 }
 
+@media (max-width: 750px) {
+  .food-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .thumbnail-row .thumbnail{
+  }
+}
+
 .thumbnail-row{
   position: relative;
   width: 155px;

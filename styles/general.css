@@ -221,6 +221,18 @@ input:focus {
   padding: 20px;
   justify-content: center;
 }
+
+@media (max-width: 750px) {
+  .instruction-wrapper .order-instruction{
+    text-align: start;
+    align-items: start;
+    justify-items: start;
+  }
+
+  .order-instruction .instruction-question{
+    margin-left: 100px;
+  }
+}
 .order-instruction{
   display: grid;
   grid-template-rows: 80px 1fr;
